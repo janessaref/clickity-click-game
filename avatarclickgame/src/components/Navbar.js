@@ -17,9 +17,10 @@ function Navbar() {
 </button>
 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
   <div className="navbar-nav">
-    <a className="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-    {/* <a class="nav-item nav-link" href="#">Features</a>
-    <a class="nav-item nav-link" href="#">Pricing</a> */}
+    {/* <a className="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a> */}
+    <div className="nav-item nav-link">Score:</div>
+    {/* <div>/</div> */}
+    <div className="nav-item nav-link">Top Score:</div>
   </div>
 </div>
 </nav>
