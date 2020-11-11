@@ -2,17 +2,62 @@
     {
       "id": 1,
       "name": "Aang",
-      "image": "./images/aang.jpeg"
+      "image": "./images/aang.jpg"
     },
     {
       "id": 2,
       "name": "Zuko",
-      "image": "./images/zuko.png"
+      "image": "./images/zuko.jpg"
     },
     {
       "id": 3,
-      "name": "Squidward",
-      "image": "./images/katara.png"
-    }
+      "name": "Katara",
+      "image": "./images/katara.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Toph",
+        "image": "./images/toph.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Momo",
+        "image": "./images/momo.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Appa",
+        "image": "./images/appa.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Azula",
+        "image": "./images/azula.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Squidward",
+        "image": "./images/iroh.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Tylee",
+        "image": "./images/tylee.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Yue",
+        "image": "./images/yue.jpg"
+      },
+      {
+        "id": 11,
+        "name": "Sokka",
+        "image": "./images/sokka.jpg"
+      },
+      {
+        "id": 12,
+        "name": "Suki",
+        "image": "./images/suki.jpg"
+      }
   ]
   
