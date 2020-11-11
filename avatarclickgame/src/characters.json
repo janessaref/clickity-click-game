@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "name": "Aang",
+      "image": "/public/images/aang.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Zuko",
+      "image": "/public/images/zuko.png"
+    },
+    {
+      "id": 3,
+      "name": "Squidward",
+      "image": "/public/images/katara.png"
+    }
+  ]
+  
