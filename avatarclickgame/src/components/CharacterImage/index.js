@@ -1,17 +1,14 @@
 import React from "react";
-// import "./style.css";
+import "./style.css";
 
 function CharacterImages(props) {
   return (
-    <div className="card">
-      <div className="img-container">
-        <img
-          alt={props.object.name}
-          src={props.object.image}
-        />
-      </div>
-      <div className="content">
-      </div>
+    <div class="container">
+        <div className="row">
+            <div className="col-md">
+                <img alt={props.object.name} src={props.object.image}/>
+            </div>
+        </div>
     </div>
   );
 }
