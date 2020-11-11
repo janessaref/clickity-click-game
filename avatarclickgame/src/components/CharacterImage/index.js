@@ -5,7 +5,7 @@ function CharacterImages(props) {
   return (
         <div className="row">
             <div className="col-md">
-                <img alt={props.name} src={props.image}/>
+                <img alt={props.name} src={props.image} onClick={props.clickHandler}/>
             </div>
         </div>
   );

@@ -8,7 +8,7 @@ import "../styles/Navbar.css";
 //   }
 // };
 
-function Navbar() {
+function Navbar(props) {
   return (
 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 <a className="navbar-brand" href="/">Click Game</a>
@@ -18,9 +18,9 @@ function Navbar() {
 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
   <div className="navbar-nav">
     {/* <a className="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a> */}
-    <div className="nav-item nav-link">Score:</div>
+    <div className="nav-item nav-link text-white">Score:{props.score}</div>
     {/* <div>/</div> */}
-    <div className="nav-item nav-link">Top Score:</div>
+    <div className="nav-item nav-link text-white">Top Score:{props.highscore}</div>
   </div>
 </div>
 </nav>

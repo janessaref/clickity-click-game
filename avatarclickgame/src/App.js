@@ -13,12 +13,26 @@ class App extends Component {
     highscore: 0
   };
 
-  // clickImage = id => {
-  //   const characters = this.state.characters.filter(character => character.id !== id);
-  //   this.setState({characters: characters})
-  // }
-  
-  
+  clickHandler = id => {
+    const arr = this.state.characters;
+    for (let i = arr.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * arr.length);
+      let temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
+    };
+    this.setState({characters: arr});
+
+    // const characters = this.state.characters.filter(character => character.id !== id);
+   
+  };
+
+  // handleIncrement = () => {
+  //   // We always use the setState method to update a component's state
+  //   this.setState({ count: this.state.count + 1 });
+  // };
+
+
   render() {
     return (
       <div>
@@ -31,6 +45,7 @@ class App extends Component {
             key={character.id}
             name={character.name}
             image={character.image}
+            clickHandler={this.clickHandler}
           />
         ))}
         </div>
