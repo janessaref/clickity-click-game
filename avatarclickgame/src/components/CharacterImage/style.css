@@ -1,8 +1,12 @@
+img {
+    border: 5px solid;
+    border-color: #F09479;
+    border-radius: 5px;
+}  
+
 img:hover {
     cursor: pointer;
+    box-shadow: 8px 8px 5px #888888;
+    width: 205px;
 }
 
-img {
-    border: 4px solid;
-    border-color: lightblue;
-}  

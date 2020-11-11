@@ -11,19 +11,21 @@ class App extends Component {
   state = {
     characters: characters,
     score: 0,
-    highscore: 0
+    highscore: 0,
+    message: "Let's play!"
   };
 
   clickHandler = e => {
     
     const name = e.target.getAttribute("data-name");
     if(clickedNameArray.includes(name)) {
-      alert("u lose SOKKA!!!!");
+      this.setState({message: "You lose SOKKA!"});
       clickedNameArray = [];
       this.setState({score: 0});
     } else {
       const currentScore = this.state.score + 1;
       this.setState({score: currentScore});
+      this.setState({message: "A round of Appa-lause!"});
       clickedNameArray.push(name);
       if(currentScore > this.state.highscore) {
         this.setState({highscore: currentScore})
@@ -39,16 +41,8 @@ class App extends Component {
       arr[j] = temp;
     };
     this.setState({characters: arr});
-
-    // const characters = this.state.characters.filter(character => character.id !== id);
    
   };
-
-  // handleIncrement = () => {
-  //   // We always use the setState method to update a component's state
-  //   this.setState({ count: this.state.count + 1 });
-  // };
-
 
   render() {
     return (
@@ -56,9 +50,11 @@ class App extends Component {
         <Navbar
         score={this.state.score}
         highscore={this.state.highscore}
+        message={this.state.message}
          />
         <Header />
         <div className ="container">
+          <div className="row">
         {this.state.characters.map(character => (
           <CharacterImage
             id={character.id}
@@ -68,6 +64,7 @@ class App extends Component {
             clickHandler={this.clickHandler}
           />
         ))}
+        </div>
         </div>
       </div>
     );

@@ -4,8 +4,3 @@
     margin: 5px;
     align-items: center;
 }
-
-.picture:hover {
-    cursor: pointer;
-    border: gray;
-}

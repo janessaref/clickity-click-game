@@ -10,19 +10,21 @@ import "../styles/Navbar.css";
 
 function Navbar(props) {
   return (
-<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-<a className="navbar-brand" href="/">Click Game</a>
-<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-  <span className="navbar-toggler-icon"></span>
-</button>
-<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-  <div className="navbar-nav">
-    {/* <a className="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a> */}
-    <div className="nav-item nav-link text-white">Score: {props.score}</div>
-    {/* <div>/</div> */}
-    <div className="nav-item nav-link text-white">Top Score: {props.highscore}</div>
-  </div>
-</div>
+    <nav className="navbar navbar-expand-sm fixed-top navbar-light"> 
+            <a className="navbar-brand" href="/">Click Game: Avatar</a>
+        <div className="navbar-collapse" id="navbarText">
+            <div className="navbar-nav mx-auto">
+            <span className="navbar-text mt-2 h3 message">{props.message}
+            </span>
+            </div> 
+                <div className="nav-item mr-2">Score: {props.score}
+                </div>
+                <div>|
+                </div>
+                <div className="nav-item ml-2 mr-2">Top Score: {props.highscore}
+                </div>
+            </div>
+        
 </nav>
   );
 }
