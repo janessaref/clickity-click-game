@@ -13,10 +13,10 @@ class App extends Component {
     highscore: 0
   };
 
-  clickImage = id => {
-    const characters = this.state.characters.filter(character => character.id !== id);
-    this.setState({characters: characters})
-  }
+  // clickImage = id => {
+  //   const characters = this.state.characters.filter(character => character.id !== id);
+  //   this.setState({characters: characters})
+  // }
   
   
   render() {
@@ -25,9 +25,14 @@ class App extends Component {
         <Navbar />
         <Header />
         <div className ="container">
-        <CharacterImage object = {characters[0]} />
-        <CharacterImage object = {characters[1]} />
-        <CharacterImage object = {characters[2]} />
+        {this.state.characters.map(character => (
+          <CharacterImage
+            id={character.id}
+            key={character.id}
+            name={character.name}
+            image={character.image}
+          />
+        ))}
         </div>
       </div>
     );

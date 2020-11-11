@@ -3,13 +3,11 @@ import "./style.css";
 
 function CharacterImages(props) {
   return (
-    <div class="container">
         <div className="row">
             <div className="col-md">
-                <img alt={props.object.name} src={props.object.image}/>
+                <img alt={props.name} src={props.image}/>
             </div>
         </div>
-    </div>
   );
 }
 
