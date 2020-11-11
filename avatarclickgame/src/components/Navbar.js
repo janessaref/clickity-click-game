@@ -18,9 +18,9 @@ function Navbar(props) {
 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
   <div className="navbar-nav">
     {/* <a className="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a> */}
-    <div className="nav-item nav-link text-white">Score:{props.score}</div>
+    <div className="nav-item nav-link text-white">Score: {props.score}</div>
     {/* <div>/</div> */}
-    <div className="nav-item nav-link text-white">Top Score:{props.highscore}</div>
+    <div className="nav-item nav-link text-white">Top Score: {props.highscore}</div>
   </div>
 </div>
 </nav>

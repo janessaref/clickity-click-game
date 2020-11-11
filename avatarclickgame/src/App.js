@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import characters from "./characters.json";
 import CharacterImage from "./components/CharacterImage";
 
+let clickedNameArray = [];
 
 class App extends Component {
   state = {
@@ -13,7 +14,20 @@ class App extends Component {
     highscore: 0
   };
 
-  clickHandler = id => {
+  clickHandler = e => {
+    console.log(clickedNameArray)
+    const name = e.target.getAttribute("data-name");
+    if(clickedNameArray.includes(name)) {
+      alert("u lose SOKKA!!!!");
+      clickedNameArray = [];
+      this.setState({score: 0});
+    } else {
+      const currentScore = this.state.score + 1;
+      this.setState({score: currentScore});
+      clickedNameArray.push(name);
+    }
+
+
     const arr = this.state.characters;
     for (let i = arr.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * arr.length);
@@ -36,7 +50,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar
+        score={this.state.score}
+        highscore={this.state.highscore}
+         />
         <Header />
         <div className ="container">
         {this.state.characters.map(character => (
