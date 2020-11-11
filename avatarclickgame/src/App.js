@@ -15,7 +15,7 @@ class App extends Component {
   };
 
   clickHandler = e => {
-    console.log(clickedNameArray)
+    
     const name = e.target.getAttribute("data-name");
     if(clickedNameArray.includes(name)) {
       alert("u lose SOKKA!!!!");
@@ -25,6 +25,9 @@ class App extends Component {
       const currentScore = this.state.score + 1;
       this.setState({score: currentScore});
       clickedNameArray.push(name);
+      if(currentScore > this.state.highscore) {
+        this.setState({highscore: currentScore})
+      }
     }
 
 
