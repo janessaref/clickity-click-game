@@ -1,6 +1,5 @@
 nav {
     background-color: #D0F0BF;
-    /* height: 60px; */
     padding: 5px;
 }
   
@@ -8,5 +7,6 @@ nav {
     a#avatarMain {
         display: none;
     }
+    
 }
   

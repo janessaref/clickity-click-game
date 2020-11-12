@@ -1,12 +1,13 @@
 import React from "react";
 import "./style.css";
 
-function CharacterImages(props) {
+// passing in the name, image and clickHandler props
+function CharacterImages({name, image, clickHandler}) {
   return (
         <div className="col-md m-2">
-            <img alt={props.name} src={props.image} onClick={props.clickHandler} data-name={props.name}/>
+            <img alt={name} src={image} onClick={clickHandler} data-name={name}/>
         </div>
   );
-}
+};
 
 export default CharacterImages;
