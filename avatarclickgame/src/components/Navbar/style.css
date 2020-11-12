@@ -21,4 +21,12 @@ nav {
         float: left;
     }
 }
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
   

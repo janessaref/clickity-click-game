@@ -14,7 +14,7 @@ class App extends Component {
     characters: characters,
     score: 0,
     highscore: 0,
-    message: "Let's play!"
+    message: "LET'S PLAY!"
   };
 
   // our click handler for whichever image the user has clicked on
@@ -25,13 +25,13 @@ class App extends Component {
 
     // setting a conditional statement that if the array already includes the name of the character, reset the array and score and change the state of the message else, if the character's name is not in the array, push the name into the array and set the state of the highscore
     if(clickedNameArray.includes(name)) {
-      this.setState({message: "You lose SOKKA!"});
+      this.setState({message: "You lose SOKKA! Try again!"});
       clickedNameArray = [];
       this.setState({score: 0});
     } else {
       const currentScore = this.state.score + 1;
       this.setState({score: currentScore});
-      this.setState({message: "A round of Appa-lause!"});
+      this.setState({message: "Great job! A round of APPA-lause!"});
       clickedNameArray.push(name);
       if(currentScore > this.state.highscore) {
         this.setState({highscore: currentScore})
