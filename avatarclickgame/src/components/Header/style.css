@@ -1,5 +1,11 @@
 .jumbotron {
     background-color: #88EEE7;
     opacity: .9;
-    margin-top: 5px;
+    margin-top: 25px;
+}
+
+@media (max-width: 318px) {
+    div.jumbotron {
+        margin-top: 55px;
+    }
 }

@@ -1,12 +1,24 @@
 nav {
     background-color: #D0F0BF;
     padding: 5px;
+    box-shadow: 5px 5px 5px gray;
 }
   
 @media (max-width: 574px) {
     a#avatarMain {
         display: none;
     }
-    
+    span#messageDisplay {
+        align-self: center;
+    }
+    div#currentScore {
+        float: left;
+    }
+    div.divider {
+       display: none;
+    }
+    div#highScore {
+        float: left;
+    }
 }
   
