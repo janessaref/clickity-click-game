@@ -1,0 +1,12 @@
+nav {
+    background-color: #D0F0BF;
+    /* height: 60px; */
+    padding: 5px;
+}
+  
+@media (max-width: 574px) {
+    a#avatarMain {
+        display: none;
+    }
+}
+  
