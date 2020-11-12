@@ -69,7 +69,7 @@ class App extends Component {
 ```
 
 ## Deployed Link
-- [See Live Site]()
+- [See Live Site](https://janessaref.github.io/clickity-click-game/)
 
 ## Author
 
