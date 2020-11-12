@@ -1,0 +1,8 @@
+footer {
+    height: 100px;
+    background-color: lightcoral;
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+}
